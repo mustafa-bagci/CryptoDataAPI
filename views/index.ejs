@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <%- include('partials/navbar.ejs') %>
+    <%- include('partials/hero.ejs') %>
+
+    <section class="globalData">
+        <div class="g-0 p-3" id="data">
+            <ul class="d-flex align-content-between justify-content-center gap-3 p-0">
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>Crypto <br> Currencies:</b>
+                        <br>
+                        <span><%= coins_count %></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>Markets: </b>
+                        <br>
+                        <span><%= active_markets %></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>Markets Cap: </b>
+                        <br>
+                        <span>$<%= total_mcap %></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>24h Vol: </b>
+                        <br>
+                        <span>$<%= total_volume %></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>Dominance Btc: </b>
+                        <br>
+                        <span><%= btc_d %>%</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>Dominance Eth: </b>
+                        <br>
+                        <span><%= eth_d %>%</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>Transactions Last 24h: </b>
+                        <br>
+                        <span><%= mcap_change %></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>Trading Last 24h: </b>
+                        <br>
+                        <span><%= volume_change %></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>Prices Changed: </b>
+                        <br>
+                        <span><%= avg_change_percent %></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>ATH Total Trading: </b>
+                        <br>
+                        <span><%= volume_ath %></span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary">
+                        <b>ATH Total Marketcap: </b>
+                        <br>
+                        <span><%= mcap_ath %></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
