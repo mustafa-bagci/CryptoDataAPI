@@ -18,7 +18,7 @@ Welcome to the Crypto Data API project! This API allows you to fetch real-time c
     ```
 2. Navigate to the project directory:
     ```bash
-    cd crypto-currency-api
+    cd CryptoDataAPI
     ```
 3. Install dependencies:
     ```bash
