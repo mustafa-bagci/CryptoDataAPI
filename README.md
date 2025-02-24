@@ -1,8 +1,8 @@
-# Crypto Currency API
+# Crypto Data API 
 
 ![Screenshot of the Chat Application](cryptocurrency-api.png)
 
-Welcome to the Crypto Currency API project! This API allows you to fetch real-time cryptocurrency data.
+Welcome to the Crypto Data API project! This API allows you to fetch real-time cryptocurrency data.
 
 ## Features
 
@@ -14,7 +14,7 @@ Welcome to the Crypto Currency API project! This API allows you to fetch real-ti
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/mustafa-bagci/crypto-currency-api.git
+    git clone https://github.com/mustafa-bagci/CryptoDataAPI.git
     ```
 2. Navigate to the project directory:
     ```bash
